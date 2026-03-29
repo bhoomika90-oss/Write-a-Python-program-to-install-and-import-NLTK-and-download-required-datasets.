@@ -1,0 +1,15 @@
+# Step 1: Install NLTK (run this only once)
+import os
+os.system("pip install nltk")
+
+# Step 2: Import NLTK
+import nltk
+
+# Step 3: Download required datasets
+nltk.download('punkt')        # Tokenizer
+nltk.download('stopwords')   # Stopwords list
+nltk.download('wordnet')     # WordNet database
+nltk.download('averaged_perceptron_tagger')  # POS tagging
+nltk.download('omw-1.4')     # Multilingual WordNet data
+
+print("NLTK installed and datasets downloaded successfully!")
